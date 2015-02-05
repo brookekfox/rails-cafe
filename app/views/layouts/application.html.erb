@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railscafe</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> <!-- embedded ruby tag -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %> 
+</head>
+<body>
+
+<%= yield %> <!-- http://en.wikibooks.org/wiki/Ruby_on_Rails/ActionView/Layout_Files -->
+
+</body>
+</html>

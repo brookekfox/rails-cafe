@@ -1,0 +1,28 @@
+<h1>Beverage List</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>Roast</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Decaf</th>
+			<th>Expiration Date</th>
+			<th>Brew</th>
+			<th colspan="7"></th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @beverages.each do |bev| %> <!-- no equal sign in the embedded ruby tag around a loop -->
+			<tr>
+				<td><%= bev.roast %></td>
+				<td><%= bev.quantity %></td>
+				<td><%= bev.price %></td>
+				<td><%= bev.decaf %></td>
+				<td><%= bev.expiration_date %></td>
+				<td><%= bev.brew %></td>
+			</tr>
+		<% end %>
+	</tbody>	
+</table>

@@ -1,0 +1,14 @@
+<h1>Add a Beverage!</h1>
+
+<!-- generally no equal sign for a loop, but the exception is for forms -->
+<!-- it is rails convention to loop through a form with an f -->
+<%= form_for @beverage do |f| %>
+	Roast: <%= f.text_field :roast %><br>
+	Quantity: <%= f.number_field :quantity %><br>
+	Price: <%= f.number_field :price %><br>
+	Decaf: <%= f.text_field :decaf %><br>
+	Expiration Date: <%= f.date_field :expiration_date %><br>
+	Brew: <%= f.text_field :brew %><br><br>
+
+	<%= f.submit "Add this beverage!" %>
+<% end %> <!-- you don't need an equal sign in the end tag -->

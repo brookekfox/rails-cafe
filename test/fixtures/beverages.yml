@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  roast: MyString
+  quantity: 1.5
+  price: 1.5
+  decaf: false
+  expiration_date: 2015-02-04
+  brew: MyString
+
+two:
+  roast: MyString
+  quantity: 1.5
+  price: 1.5
+  decaf: false
+  expiration_date: 2015-02-04
+  brew: MyString
